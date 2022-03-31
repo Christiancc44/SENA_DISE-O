@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="/CSS/fabricacion.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Archivo
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Guardar</a>
+                            <a class="dropdown-item" href="#">Salir</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Editar
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Cortar</a>
+                            <a class="dropdown-item" href="#">Copiar</a>
+                            <a class="dropdown-item" href="#">Pegar</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Modulos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Ingreso de OP</a>
+                            <a class="dropdown-item" href="#">Fabricación</a>
+                            <a class="dropdown-item" href="#">Envase</a>
+                            <a class="dropdown-item" href="#">Historial</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <button type="button"><img src="/imagenes/Agregar.svg"></imgimg>
+                <br>
+                Ingresar Orden</button>
+        </a>
+        <a class="navbar-brand" href="#">
+            <button type="button"><img src="/imagenes/En_Proceso.svg"></imgimg>
+                <br>
+                En Proceso</button>
+        </a>
+        <a class="navbar-brand" href="#">
+            <button type="button"><img src="/imagenes/Filtrar.svg"></imgimg>
+                <br>
+                Filtrar</button>
+        </a>
+        <a class="navbar-brand" href="#">
+            <button type="button"><img src="/imagenes/Editar.svg"></imgimg>
+                <br>
+                Editar</button>
+        </a>
+        <a class="navbar-brand" href="#">
+            <button type="button"><img src="/imagenes/Eliminar.svg"></imgimg>
+                <br>
+                Eliminar</button>
+        </a>
+        <a class="navbar-brand" href="#">
+            <button type="button"><img src="/imagenes/Actualizar.svg"></imgimg>
+                <br>
+                Actualizar</button>
+        </a>
+        <a class="navbar-brand" href="#">
+            <button type="button"><img src="/imagenes/Save.svg"></imgimg>
+                <br>
+                Guardar</button>
+        </a>
+        <a class="navbar-brand" href="#">
+            <button type="button"><img src="/imagenes/Planificar.svg"></imgimg>
+                <br>
+                Planificación</button>
+        </a>
+        <a class="navbar-brand" href="#">
+            <button type="button"><img src="/imagenes/Maquina.svg"></imgimg>
+                <br>
+                Marmita</button>
+        </a>
+        <a class="navbar-brand" href="#">
+            <button type="button"><img src="/imagenes/Etapa.svg"></imgimg>
+                <br>
+                Etapa</button>
+        </a>
+        <a class="navbar-brand" href="#">
+            <button type="button"><img src="/imagenes/Informe.svg"></imgimg>
+                <br>
+                Generar Informe</button>
+        </a>
+        <a class="navbar-brand" href="#">
+            <button type="button"><img src="/imagenes/Exportar.svg"></imgimg>
+                <br>
+                Exportar</button>
+        </a>
+        <a class="navbar-brand" href="#">
+            <button type="button"><img src="/imagenes/Imprimir.svg"></imgimg>
+                <br>
+                Imprimir</button>
+        </a>
+    </nav>
+
+
+    <section>
+        <table class="table-responsive">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th scope="col">IdMez</th>
+                    <th scope="col">IdHis</th>
+                    <th scope="col">IdMar</th>
+                    <th scope="col">IdAlm</th>
+                    <th scope="col">MezOrdenPrevisional</th>
+                    <th scope="col">MezIDH</th>
+                    <th scope="col">MezNombre</th>
+                    <th scope="col">MezCantidad_kg</th>
+                    <th scope="col">MezLote</th>
+                    <th scope="col">MezOrden</th>
+                    <th scope="col">MezFechaFabricacion</th>
+                    <th scope="col">MezInicioFabricación</th>
+                    <th scope="col">MezFinFabricación</th>
+                    <th scope="col">MezTiempoProceso</th>
+                    <th scope="col">MezPrioridad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        </div>
+                    </th>
+                    <th scope="row">1</th>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>123456789</td>
+                    <td>4444444</td>
+                    <td>Mezcla Shampoo</td>
+                    <td>3000</td>
+                    <td>1111111111</td>
+                    <td>1003333333</td>
+                    <td>12/03/2022</td>
+                    <td>06:00</td>
+                    <td>12:00</td>
+                    <td>06:00</td>
+                    <td>Alta</td>
+                </tr>
+                <tr>
+                    <th>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        </div>
+                    </th>
+                    <th scope="row">2</th>
+                    <td>2</td>
+                    <td>6</td>
+                    <td>1</td>
+                    <td>66557788994</td>
+                    <td>2478956</td>
+                    <td>Mezcla Desodorante</td>
+                    <td>2000</td>
+                    <td>2222222222</td>
+                    <td>2007777777</td>
+                    <td>12/03/2022</td>
+                    <td>12:00</td>
+                    <td>18:00</td>
+                    <td>06:00</td>
+                    <td>Baja</td>
+                </tr>
+                <tr>
+                    <th>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        </div>
+                    </th>
+                    <th scope="row">3</th>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>8897412036</td>
+                    <td>2797451</td>
+                    <td>Mezcla Acondicionador</td>
+                    <td>3000</td>
+                    <td>9874512456</td>
+                    <td>2004569874</td>
+                    <td>12/03/2022</td>
+                    <td>18:00</td>
+                    <td>00:00</td>
+                    <td>06:00</td>
+                    <td>Alta</td>
+                </tr>
+                <tr>
+                    <th>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        </div>
+                    </th>
+                    <th scope="row">4</th>
+                    <td>4</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>6547896541</td>
+                    <td>1648759</td>
+                    <td>Mezcla Tratamiento</td>
+                    <td>2000</td>
+                    <td>2102547896</td>
+                    <td>1003696325</td>
+                    <td>13/03/2022</td>
+                    <td>00:00</td>
+                    <td>05:00</td>
+                    <td>05:00</td>
+                    <td>Media</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+    </section>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+    <footer>
+        <div><img src="/imagenes/Telefono.svg" id="telefono"> Tel Servicio tecnico 24H: 123-4567-890</div>
+        <div><img src="/imagenes/Planeta.svg" id="telefono"> Bogotá, Colombia</div>
+    </footer>
+</body>
+
+</html>

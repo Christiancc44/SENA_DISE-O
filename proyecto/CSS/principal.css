@@ -1,0 +1,41 @@
+body{
+    background-color:rgb(226, 241, 255);
+}
+form{
+    display: block;
+    width: 600px;
+    margin: 1cm;
+}
+
+.form-control{
+    font-family: 'Times New Roman', Times, serif;
+    height: 30px;
+    width: 200px;
+}
+
+button{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+label{
+    font-family: 'Times New Roman', Times, serif;
+}
+a{
+    font-family: 'Times New Roman', Times, serif;
+}
+footer{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    margin-bottom: 0ch;
+    background-color: rgb(249, 249,250);
+}
+img{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 30px;
+    width: 30px;
+}
+#telefono{
+    height: 20px;
+    width: 20px;
+}

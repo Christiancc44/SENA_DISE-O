@@ -1,0 +1,46 @@
+header{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+body{
+    background-color:rgb(226, 241, 255);
+}
+table{
+    height: 200px;
+    font-size: 12px;
+    text-align: center;
+    width:90%;
+    border-collapse: collapse;
+    margin: 40px auto;
+    background-color: white;
+}
+#dropdownMenuButton{
+    margin: 15px;
+}
+thead{
+    height: 40px;
+    background-color: rgb(216,217,217);
+    color: black;
+}
+button{
+    background-color: transparent;
+    border:0ch;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+footer{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    margin-bottom: 0ch;
+    background-color: rgb(249, 249,250);
+}
+img{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 30px;
+    width: 30px;
+}
+#telefono{
+    height: 20px;
+    width: 20px;
+}
